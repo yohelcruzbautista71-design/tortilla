@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>tortilleria fierromin</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: #fff8e7;
+}
+
+header{
+    background: linear-gradient(90deg,#ff9800,#ff5722);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+header p{
+    margin-top:10px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.tarjeta{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    transition:.3s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-8px);
+}
+
+.tarjeta img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.info{
+    padding:20px;
+}
+
+.info h2{
+    color:#ff5722;
+    margin-bottom:10px;
+}
+
+.precio{
+    color:green;
+    font-size:1.3rem;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.contacto{
+    background:#ff9800;
+    color:white;
+    padding:30px;
+    text-align:center;
+}
+
+.contacto h2{
+    margin-bottom:15px;
+}
+
+footer{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🌽 Tortillería fierromin</h1>
+    <p>Las mejores tortillas artesanales de la región</p>
+</header>
+
+<section class="galeria">
+
+    <div class="tarjeta">
+        <img src="img/azul.jpeg" alt="tortilla azul">
+        <div class="info">
+            <h2>Tortilla azul</h2>
+            <p>.</p>
+            <div class="precio">$25 MXN / Kg</div>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="img/totopo.jpeg" alt="totopo">
+        <div class="info">
+            <h2>Totopo</h2>
+            <p>.</p>
+            <div class="precio">$35 MXN / Kg</div>
+        </div>
+    </div>
+
+    <div class="tarjeta">
+        <img src="img/blanca.jpeg" alt="tortilla amarilla">
+        <div class="info">
+            <h2>Tortilla amarilla</h2>
+            <p>.</p>
+            <div class="precio">$40 MXN / Paquete</div>
+        </div>
+    </div>
+
+</section>
+
+<section class="contacto">
+    <h2>📍 Ubicación</h2>
+    <p>Av. Principal #123, tlaxiaco </p>
+
+    <br>
+
+    <h2>📞 Contacto</h2>
+    <p>Teléfono: +52 953 123 4567</p>
+    <p>WhatsApp: +52 953 123 4567</p>
+    <p>Correo: ventas@tortilleria.com</p>
+</section>
+
+<footer>
+    © 2026 yohel fermin cruz bautista
+</footer>
+
+</body>
+</html>
